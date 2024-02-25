@@ -80,7 +80,7 @@ public class BookServices {
     }
 
     public List<Book> searchByGenre(String genre) {
-        return repository.findByGenre(genre);
+        return repository.findByGener(genre);
     }
 
     public List<Book> searchByPublicationDateDescending() {

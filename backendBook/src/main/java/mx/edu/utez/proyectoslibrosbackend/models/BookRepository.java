@@ -10,6 +10,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> findByNameBookContainingIgnoreCase(String keyword);
     List<Book> findByAuthor(String author);
     List<Book> findByPublicationDateBetween(Date startDate, Date endDate);
-    List<Book> findByGenre(String genre);
+    List<Book> findByGener(String genre);
     List<Book> findByOrderByPublicationDateDesc();
 }
